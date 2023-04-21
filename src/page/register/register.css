@@ -1,0 +1,10 @@
+.RegisterForm{
+    height: 600px;
+}
+.input-field{
+    margin-top: 20px;
+    height: 80px;
+}
+input{
+    margin-bottom: 0;
+}

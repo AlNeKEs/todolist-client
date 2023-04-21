@@ -1,0 +1,79 @@
+.wrap {
+  width: 700px;
+  margin: 20px auto;
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.Logout {
+  width: 100px;
+}
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tab-action {
+  width: 33%;
+}
+
+.ant-list-item {
+  box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-content {
+  flex: 1;
+  margin-left: 10px;
+}
+.todo-done {
+  color: #87d068;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: line-through;
+}
+
+.todo-notdone {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #cf1322;
+}
+
+.todo-content h3 {
+  font-size: 18px;
+}
+
+.todo-action {
+  box-sizing: border-box;
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-checkbox {
+  transform: translateY(25%);
+}
+
+.del-btn {
+  border: none;
+  color: #cf1322;
+  font-size: 18px;
+}
