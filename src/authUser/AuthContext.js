@@ -49,7 +49,6 @@ const AuthContextProvider = ({ children }) => {
           },
         });
       } else {
-        console.log(response);
         dispatch({
           type: "SET_AUTH",
           payload: {
@@ -60,7 +59,6 @@ const AuthContextProvider = ({ children }) => {
         });
       }
     } catch (e) {
-      console.log(e);
       document.cookie = `token = `;
       setAuthToken(null);
       dispatch({

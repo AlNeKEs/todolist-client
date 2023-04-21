@@ -61,7 +61,6 @@ const Register = () => {
     }
     if (registerForm.username && registerForm.password) {
       const response = await authRegister(registerForm);
-      console.log(response);
       if (response.data.success === false) {
         openNotification("Failed", response.data.message, false);
       } else {

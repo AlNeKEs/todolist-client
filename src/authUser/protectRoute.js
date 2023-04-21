@@ -2,11 +2,10 @@ import React from "react";
 import { AuthContext } from "./AuthContext";
 import { useContext } from "react";
 import { Spin } from "antd";
-import Login from "../page/login";
-
+import Home from "../page/home";
 import { Navigate } from "react-router-dom";
 
-const Auth = () => {
+const ProtectRoute = () => {
   const {
     authState: { isAuthenticated, authLoading },
   } = useContext(AuthContext);
@@ -18,8 +17,8 @@ const Auth = () => {
     );
   }
   return (
-    <>{isAuthenticated ? <Navigate to="/" /> : <Login/>} </>
+    <>{isAuthenticated ? <Home /> : <Navigate to="login"/>} </>
   );
 };
 
-export default Auth;
+export default ProtectRoute;

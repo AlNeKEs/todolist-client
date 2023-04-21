@@ -59,7 +59,6 @@ const Login = () => {
     }
     if (loginForm.username && loginForm.password) {
       const response = await loginUser(loginForm);
-      console.log(response);
       if (response.success === false) {
         openNotification("Failed", response.message, false);
       } else {
